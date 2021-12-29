@@ -1,0 +1,35 @@
+.container {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+  
+h3 {
+    font-size: 21px;
+    margin: 0;
+    text-align: left;
+}
+  
+.pict{
+    width: 30%;
+    margin-left: 3%;
+}
+  
+.pict img {
+    width: 100%;
+    height:auto;
+}
+  
+.container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.container:nth-child(even) .wrapper {
+    text-align: right;
+}
+
+.container:nth-child(even) .pict {
+    margin-left: 0;
+    margin-right: 3%;
+}
